@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "sandbox--ner"
+version = "0.1.0"
+description = "Sandbox: Named entity recognition"
+authors = ["Ryuichi Inagaki <ryuichi.inagaki.24@googlemail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+jupyterlab = "^4.0.10"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
