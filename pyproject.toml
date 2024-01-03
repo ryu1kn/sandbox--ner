@@ -6,8 +6,13 @@ authors = ["Ryuichi Inagaki <ryuichi.inagaki.24@googlemail.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.12"
+# `torch` is not fully available above 3.11 as of 2024-01-02. cf: https://github.com/pytorch/pytorch/issues/110436
+python = "^3.11"
 jupyterlab = "^4.0.10"
+datasets = "^2.16.1"
+transformers = {version = "^4.36.2", extras = ["torch"]}
+seqeval = "^1.2.2"
+evaluate = "^0.4.1"
 
 
 [build-system]
