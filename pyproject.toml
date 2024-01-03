@@ -10,9 +10,9 @@ readme = "README.md"
 python = "^3.11"
 jupyterlab = "^4.0.10"
 datasets = "^2.16.1"
-transformers = {version = "^4.36.2", extras = ["torch"]}
 seqeval = "^1.2.2"
 evaluate = "^0.4.1"
+transformers = {version = "^4.36.2", extras = ["torch", "deepspeed"]}
 
 
 [build-system]
